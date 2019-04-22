@@ -35,7 +35,7 @@ export default class App extends React.Component {
             <div className="hamburger">
                 <div className={"menuButton container"}>
                     <MenuButton open={this.state.menuOpen} onClick={() => this.handleMenuClick()}/>
-                    <div className={"logo"}><span className="brandName"><span className="brandColor">D I</span>nnovations</span></div>
+                    <div className={"logo"}><span className="brandName"><span className="brandColor">M. S. </span>Nagar & Co.</span></div>
                 </div>
                 <Menu open={this.state.menuOpen}>
                     {menuItems}
