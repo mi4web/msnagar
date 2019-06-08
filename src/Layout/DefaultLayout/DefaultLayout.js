@@ -36,10 +36,11 @@ class DefaultLayout extends Component {
         <div className="mainContainer">
           {showDisclaimer && <Disclaimer onAgree={this.onAgree}/>}
           <div className="flex-row j-sb a-c deskTopNav">
+            <div className="brandWrapper">
+              <div className="brandName">M. S. Nagar & Co.</div>
+              <div className="title">Advocates and Solicitors</div>
+            </div>
             <NavBar items={NAV}/>
-            <ReactWOW animation='pulse'>
-              <div className="brandName"><span className="brandColor">M. S. </span>Nagar & Co.</div>
-            </ReactWOW>
 
           </div>
           <Hamburger/>
