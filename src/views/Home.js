@@ -1,6 +1,8 @@
 import React, {Component} from "react";
-import DefaultLayout from "../Layout/DefaultLayout/DefaultLayout";
-import HomePage from "../containers/HomePage/HomePage";
+// import DefaultLayout from "../Layout/DefaultLayout/DefaultLayout";
+// import HomePage from "../containers/HomePage/HomePage";
+import UnderConstruction from "./UnderConstruction";
+import '../styles/main.scss';
 
 class Home extends Component {
     componentDidMount() {
@@ -8,11 +10,14 @@ class Home extends Component {
     }
     render() {
         return (
-            <DefaultLayout>
-                <HomePage />
-            </DefaultLayout>
+            <UnderConstruction />
         )
     }
 }
 
 export default Home;
+
+//
+// <DefaultLayout>
+//   <HomePage />
+// </DefaultLayout>

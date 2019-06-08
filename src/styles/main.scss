@@ -1,0 +1,14 @@
+.underConstruction {
+  background: url("../Img/construction.gif") no-repeat;
+  background-position: 0 -100px;
+  min-height: 450px;
+  position: relative;
+  span {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    font-weight: 600;
+  }
+}
