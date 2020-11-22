@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Route, Switch} from 'react-router-dom';
 import {withRouter} from 'react-router-dom';
 import Loadable from 'react-loadable';
+import UnderConstruction from "../views/UnderConstruction";
 import {onRouteChangeEvent} from "./onRoutesChange";
 import Home from "../views/Home";
 import About from "../views/About";
@@ -25,6 +26,10 @@ const LandingPage = Loadable({
 export const routes = [
     {
         path: getPathByName(routeNames.LANDING),
+        component: UnderConstruction,
+        exact: true
+    },{
+        path: getPathByName(routeNames.NEW),
         component: Home,
         exact: true
     },

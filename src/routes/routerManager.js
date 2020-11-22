@@ -8,6 +8,10 @@ const routes = {
         path: BASE_URL,
         name: Route.LANDING
     },
+    new: {
+        path: BASE_URL + 'new',
+        name: Route.NEW
+    },
     about: {
         path: BASE_URL + 'about',
         name: Route.ABOUT

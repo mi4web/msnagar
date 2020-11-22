@@ -4,6 +4,7 @@ import {withRouter} from 'react-router-dom';
 import Router from "../../routes/routes";
 import './App.scss';
 import 'animate.css';
+import '../../commonstyles/bootstrapStyles.scss';
 
 
 class App extends Component {

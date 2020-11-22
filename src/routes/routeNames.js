@@ -5,4 +5,5 @@ export default {
     CONTACT: 'CONTACT',
     ABOUT: 'ABOUT',
     TEAM: 'TEAM',
+    NEW: 'NEW',
 }

@@ -1,6 +1,7 @@
 @import './variables.scss';
 @import './normalize.scss';
 @import './flex.scss';
+@import "./styleGuide.scss";
 
 ::-webkit-scrollbar {
   width: 6px;
@@ -91,14 +92,14 @@ button {
     }
   }
   &.tertiary {
-    background-color: $red;
+    background-color: $error;
     color: white;
     border: 1px solid transparent;
     transition: all ease-in 200ms;
     &:hover {
       background-color: white;
-      border: 1px solid $red;
-      color: $red;
+      border: 1px solid $error;
+      color: $error;
     }
   }
 }

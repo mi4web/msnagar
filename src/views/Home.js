@@ -1,7 +1,6 @@
 import React, {Component} from "react";
-// import DefaultLayout from "../Layout/DefaultLayout/DefaultLayout";
-// import HomePage from "../containers/HomePage/HomePage";
-import UnderConstruction from "./UnderConstruction";
+import DefaultLayout from "../Layout/DefaultLayout/DefaultLayout";
+import HomePage from "../containers/HomePage/HomePage";
 import '../styles/main.scss';
 
 class Home extends Component {
@@ -10,7 +9,9 @@ class Home extends Component {
     }
     render() {
         return (
-            <UnderConstruction />
+          <DefaultLayout>
+              <HomePage />
+          </DefaultLayout>
         )
     }
 }

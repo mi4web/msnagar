@@ -1,9 +1,8 @@
 @import '../../commonstyles/variables.scss';
 
 .mainContainer {
-    max-width: 1020px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 50px 20px 10px 20px;
     display: flex;
     flex-direction: column;
     footer {
@@ -36,9 +35,6 @@
     }
 
     @media only screen and (max-width: 767px) {
-        .deskTopNav {
-            display: none;
-        }
         footer {
             display: flex;
             flex-direction: column-reverse;

@@ -2,9 +2,8 @@ import React, {Component} from "react";
 import PropTypes from "prop-types";
 import ReactWOW from 'react-wow'
 import "./DefaultLayout.scss";
-import NavBar from "../../components/Nav/NavBar";
+import AppNav from "../../components/Nav/AppNav";
 import {NAV} from "../../constants/appConstants";
-import Hamburger from "../../components/Hamburger/Hamburger";
 import Disclaimer from "../../components/Disclaimer/Disclaimer";
 
 
@@ -35,16 +34,10 @@ class DefaultLayout extends Component {
     return (
         <div className="mainContainer">
           {showDisclaimer && <Disclaimer onAgree={this.onAgree}/>}
-          <div className="flex-row j-sb a-c deskTopNav">
-            <div className="brandWrapper">
-              <div className="brandName">M. S. Nagar & Co.</div>
-              <div className="title">Advocates and Solicitors</div>
-            </div>
-            <NavBar items={NAV}/>
-
+          <AppNav items={NAV}/>
+          <div className='flex-grow-1'>
+            {this.props.children}
           </div>
-          <Hamburger/>
-          {this.props.children}
           <footer className="flex-row j-sb footer">
             <div>
               Copyright {new Date().getFullYear()} M. S. Nagar & Co. / All Photographs © M. S. Nagar & Co.

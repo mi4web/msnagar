@@ -2,11 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry";
 import './Projects.scss';
-import work1 from "../../Img/work/work1.jpg";
-import work2 from "../../Img/work/work2.jpg";
-import work3 from "../../Img/work/work3.jpg";
-import work4 from "../../Img/work/work4.jpg";
-import work5 from "../../Img/work/work5.jpg";
 
 class Projects extends Component {
     render() {

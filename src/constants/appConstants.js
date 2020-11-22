@@ -28,3 +28,5 @@ export const NAV = [
     route: 'CONTACT'
   }
 ]
+
+export const BRAND_NAME = 'M. S. Nagar & Co.'
