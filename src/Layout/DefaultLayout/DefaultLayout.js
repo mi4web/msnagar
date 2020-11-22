@@ -10,20 +10,10 @@ import Disclaimer from "../../components/Disclaimer/Disclaimer";
 class DefaultLayout extends Component {
   constructor() {
     super();
-    this.state = {};
-  }
-
-  componentDidMount() {
-    const tncAgreed = localStorage.getItem("tncAgreed");
-    if (!tncAgreed) {
-      this.setState({
-        showDisclaimer: true
-      });
-    }
+    this.state = {showDisclaimer: true};
   }
 
   onAgree = () => {
-    localStorage.setItem("tncAgreed", true);
     this.setState({
       showDisclaimer: false
     });
