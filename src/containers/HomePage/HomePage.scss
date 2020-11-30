@@ -1,28 +1,43 @@
 @import "src/commonstyles/styleGuide";
+@import "src/commonstyles/stylesConfiguration";
+
 
 .homePage {
+  .description-wrapper {
+    height: calc(100vh - 66px);
+    background: url("../../Img/home.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
   .description {
     font-size: 1.40rem;
-    padding: 40px 0;
-    hyphens: auto;
-    max-width: 950px;
-    margin: 0 auto;
-  }
-
-  .heading {
-    @extend .text-large;
-    @extend .bolder;
-    color: $brandColor;
+    max-width: 600px;
+    margin-left: 50px;
+    padding-top: 50px;
+    line-height: 1.8;
+    width: 500px;
   }
 
   .sideGutter {
     padding-left: 20px;
     padding-right: 20px;
   }
-}
-
-@media only screen and (max-width: 767px) {
-  .homePage {
-    padding-top: 60px;
+  .heading {
+    position: sticky;
+    top: 1px;
+    z-index: 1;
+    background: $documentColor;
   }
 }
+
+.clients-section {
+  height: 100vh
+}
+
+
+@include media-breakpoint-down(md) {
+  .description {
+    padding: 40px 0 !important;
+  }
+}
+

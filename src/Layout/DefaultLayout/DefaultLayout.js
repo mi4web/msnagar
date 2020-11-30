@@ -23,7 +23,7 @@ class DefaultLayout extends Component {
     const {showDisclaimer} = this.state;
     return (
         <div className="mainContainer">
-          {showDisclaimer && <Disclaimer onAgree={this.onAgree}/>}
+          {window.location.href.indexOf('localhost') === -1 && showDisclaimer && <Disclaimer onAgree={this.onAgree}/>}
           <AppNav items={NAV}/>
           <div className='flex-grow-1'>
             {this.props.children}

@@ -1,4 +1,4 @@
-@import "../../commonstyles/variables.scss";
+@import "../../commonstyles/stylesConfiguration";
 
 .disclaimer {
   position: fixed;
@@ -8,10 +8,12 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
+
   h2 {
     margin-bottom: 20px;
     text-align: center;
   }
+
   .content {
     position: relative;
     width: 100%;
@@ -22,24 +24,37 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   .desc {
-     width: 70%;
-     max-width: 700px;
-     background-color: white;
-     padding: 20px 20px 0 20px;
-     max-height: 80%;
-     overflow-y: auto;
-     .action{
-       margin-top: 20px;
-       justify-content: flex-end;
-       position: sticky;
-       bottom: -1px;
-       padding: 20px 0;
-       background-color: white;
-       button:not(:last-child) {
-         margin-right: 16px;
-       }
-     }
-   }
+
+    .desc {
+      width: 70%;
+      max-width: 700px;
+      background-color: white;
+      padding: 20px 20px 0 20px;
+      max-height: 80%;
+      overflow-y: auto;
+
+      .action {
+        margin-top: 20px;
+        justify-content: flex-end;
+        position: sticky;
+        bottom: -1px;
+        padding: 20px 0;
+        background-color: white;
+
+        button:not(:last-child) {
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .disclaimer {
+    .content {
+      .desc {
+        width: 90%;
+      }
+    }
   }
 }

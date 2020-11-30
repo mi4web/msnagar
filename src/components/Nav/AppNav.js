@@ -5,14 +5,12 @@ import './AppNav.scss';
 import { BRAND_NAME } from "../../constants/appConstants";
 import { getPathByName } from "../../routes/routerManager";
 
-console.log('Navbar', Navbar,);
-console.log('Nav', Nav,);
 class AppNav extends Component {
   render() {
     const { items, location: { path } } = this.props;
     return (
       <div className="navigation">
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="light">
           <Navbar.Brand href="#home">
             <div className='text-brand'>{BRAND_NAME}</div>
             <div className='text-medium text-secondary'>Advocates and Solicitors</div>
