@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import ReactWOW from 'react-wow'
 
 class AnimatingList extends Component {
   render() {
@@ -12,9 +11,9 @@ class AnimatingList extends Component {
           <ul>
             {
               this.props.children.map((x, index) =>
-                  <ReactWOW key={index} animation="fadeIn">
+                  <div key={index}>
                     {x}
-                  </ReactWOW>)
+                  </div>)
             }
           </ul>
         </div>

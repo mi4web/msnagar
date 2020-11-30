@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import PropTypes from "prop-types";
-import ReactWOW from 'react-wow'
 import "./DefaultLayout.scss";
 import AppNav from "../../components/Nav/AppNav";
 import {NAV} from "../../constants/appConstants";

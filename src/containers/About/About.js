@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import './About.scss';
-import ReactWOW from "react-wow";
 import AnimatingList from "./AnimatingList";
 
 class About extends Component {
@@ -12,7 +11,7 @@ class About extends Component {
             <span>ABOUT US</span>
           </div>
           <div className='profile'>
-           <ReactWOW animation="fadeIn">
+           <div >
              <p>
                M. S. Nagar & Company Advocates and Solicitors Law Firm is a full service law firm, having repute in the field of law for over three decades. to provide single-window Legal services in the Delhi-NCR region. The firm brings together highly specialized professionals to effectively cater to the Legal requirements of more than 300 Companies as its clientele. We aim to provide a synergetic environment to our clients by understanding the clients’ perspective and needs.
              </p>
@@ -29,7 +28,7 @@ class About extends Component {
                Our clientele includes as follows:
                Tata Steel and , Daikin Air Condition, Gates India, Whirlpool India Ltd., Singer India, Linde India (formerly BOC), Norysis Pvt. Ltd., Omaxe Auto Ltd, Sunbeam Casting, Talbros Automotive, Krishna Maruti Group(KML), Lilliput kids wear, Khaitan Pvt., OMP India Ltd, Usha International, Alpha Toyo, Nikko Auto, Instyle Exports, Gupta Exim, etc.
              </p>
-           </ReactWOW>
+           </div>
 
             <AnimatingList head="Practice areas:" desc=" Our expertise covers legal and commercial advice on matters including:">
               <li>Anti-Trust and Competition—The team advises on range of competition issues including:</li>
