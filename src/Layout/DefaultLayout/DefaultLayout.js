@@ -27,7 +27,7 @@ class DefaultLayout extends Component {
           <div className='flex-grow-1'>
             {this.props.children}
           </div>
-          <footer className="flex-row j-sb footer">
+          <footer className="j-sb footer">
             <div>
               Copyright {new Date().getFullYear()} M. S. Nagar & Co. / All Photographs © M. S. Nagar & Co.
             </div>

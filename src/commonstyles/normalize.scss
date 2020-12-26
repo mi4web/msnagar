@@ -10,6 +10,11 @@ html {
     font-size: 14px;
 }
 
+body, html, #root, .mainContainer {
+    width: 100%;
+    height: 100%;
+}
+
 a {
     text-decoration: none;
     cursor: pointer;

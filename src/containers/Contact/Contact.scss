@@ -3,6 +3,9 @@
 .contact {
   flex: 1 0 0;
   margin-top: 40px;
+  background-color: $brandColor;
+  color: white;
+  padding-top: 30px;
 
   .mapouter {
     position: relative;
@@ -26,7 +29,6 @@
   }
 
   .address {
-    color: $secondary;
     align-self: center;
     display: flex;
     margin: 30px 0 50px 0;
@@ -35,7 +37,10 @@
     .email {
       a {
         padding-left: 8px;
-        color: $brandColor;
+        color: white;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
     .head {
@@ -53,8 +58,6 @@
       a {
         line-height: 25px;
         padding-left: 4px;
-        color: $secondary;
-
         &:hover {
           color: $text-primary
         }

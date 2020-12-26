@@ -1,6 +1,9 @@
 @import "../../commonstyles/variables.scss";
+@import "../../commonstyles/stylesConfiguration.scss";
 
 .about {
+  padding: 0 20px;
+
   .imageContainer {
     flex-basis: 40%;
     flex-shrink: 0;
@@ -90,3 +93,4 @@
     }
   }
 }
+

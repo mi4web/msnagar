@@ -1,27 +1,62 @@
 import React, { Component } from 'react';
+import {CardDeck} from 'react-bootstrap'
 import './Team.scss';
+import TeamMember from "./TeamMember";
 
+const members = [
+  {
+    name: 'M S Nagar',
+    desc: 'Advocate, Founding Partner',
+    features: ['Chairman- FCCI', 'President - NCR Employers Association', '33+ years of experience']
+  },
+  {
+    name: 'Mohit Nagar',
+    desc: 'Advocate, Managing Partner',
+    features: ['LL.M. (Cardiff University, U.K.)', 'Specialization in Company and Commercial Laws- NCLT, NCLAT, CESTAT, High Courts and Supreme Court']
+  },
+  {
+    name: 'Deepanshu Nagar',
+    features: ['B.Tech. (CSE) VIT University', 'LL.M. specializing in Intellectual Property and cyber laws (Queen Mary, London)']
+  },
+  {
+    name: 'Dimple Nagar',
+    desc: 'Advocate, Partner',
+    features: ['B.A', 'LL.B']
+  },
+  {
+    name: 'Anil Bhardwaj',
+    features: ['Specialisation in criminal laws', '33+ years of experience']
+  },
+  {
+    name: 'Renu Agarwal',
+    desc: 'Advocate',
+    features: ['Former Vice President, District Bar Association, Tis Hazari', '30+ years of experience']
+  },
+  {
+    name: 'Pushpender Yadav',
+    features: ['Ex. Judicial Officer, Haryana']
+  },
+  {
+    name: 'Ajit Rajora',
+    desc: 'Advocate'
+  },
+  {
+    name: 'S B Kaushik',
+    desc: 'Expert in GST',
+    features: ['Excise with over 30 years of experience']
+  },
+  {
+    name: 'Damini Kaushik',
+    desc: 'Chartered Accountant'
+  },
+]
 class Team extends Component {
     render() {
         return (
             <div className="team">
-              <ul>
-                <li>M S Nagar(chairman- FCCI; President, NCR Employers Association, Exp- over 30 yrs and commercial, Civil, economic offences and Labour Laws)</li>
-                <li>Mohit Nagar(LL.M. (Cardiff University) Specialization in Company and Commercial Laws- NCLT, NCLAT, CESTAT, HCs and Supreme Court)</li>
-                <li>Dimple Nagar, Adv, </li>
-                <li>Renu Agarwal (exp –over 30 yrs)</li>
-                <li>Harsh Prabhakar</li>
-                <li>Prashant</li>
-                <li>Jagat Singh</li>
-                <li>Ajit Rajora</li>
-                <li>Devender Grover</li>
-                <li>Neelam Yadav</li>
-                <li>Pushpender Yadav</li>
-                <li>H P Singh(Retd. Dist. And Session Judge)</li>
-                <li>
-                  Anil Bhardwaj (33 yrs.)
-                </li>
-              </ul>
+              <CardDeck>
+                {members.map((member, index) => <TeamMember index={index} member={member} key={index}/>)}
+              </CardDeck>
             </div>
         );
     }

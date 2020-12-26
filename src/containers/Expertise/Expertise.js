@@ -44,6 +44,7 @@ class Expertise extends Component {
               <div className='subText'>
                 Areas of practice includes
               </div>
+              <ListGroup variant="flush">
               <ListGroup.Item>Corporate Insolvency disputes</ListGroup.Item>
               <ListGroup.Item>Domestic arbitration</ListGroup.Item>
               <ListGroup.Item>Environment related matters</ListGroup.Item>
@@ -54,6 +55,7 @@ class Expertise extends Component {
               <ListGroup.Item>Recovery proceedings</ListGroup.Item>
               <ListGroup.Item>Shareholders Dispute including Oppression and Mismanagement</ListGroup.Item>
               <ListGroup.Item>Drafting arbitration agreements</ListGroup.Item>
+              </ListGroup>
             </Card.Body>
           </Accordion.Collapse>
         </Card>
@@ -66,6 +68,7 @@ class Expertise extends Component {
               <div className='subText'>
                 The firm has extensive experience in representing clients in criminal matters including the following:
               </div>
+              <ListGroup variant="flush">
               <ListGroup.Item>White Collar Crimes/Economic Offences</ListGroup.Item>
               <ListGroup.Item>Department of Company Affairs-Serious Frauds Investigation office</ListGroup.Item>
               <ListGroup.Item>Bank/Financial Institutions Frauds</ListGroup.Item>
@@ -76,7 +79,7 @@ class Expertise extends Component {
               <ListGroup.Item>Defamation Cases</ListGroup.Item>
               <ListGroup.Item>Prevention of Money Laundering Act</ListGroup.Item>
               <ListGroup.Item>Prevention of Corruption Act</ListGroup.Item>
-
+              </ListGroup>
             </Card.Body>
           </Accordion.Collapse>
         </Card>
@@ -89,6 +92,7 @@ class Expertise extends Component {
               <div className='subText'>
                 The team advises and assists clients on:
               </div>
+              <ListGroup variant="flush">
               <ListGroup.Item>Protection and prosecution of IP rights (including Patents, Trademarks, Design Rights, Copyrights, Geographical Indications, Domain Names, proprietary know how and business processes)</ListGroup.Item>
               <ListGroup.Item>Registration and opposition of trademarks</ListGroup.Item>
               <ListGroup.Item>Patent filings and prosecution</ListGroup.Item>
@@ -97,6 +101,7 @@ class Expertise extends Component {
               <ListGroup.Item>Drafting and negotiating various IP agreements including license agreements</ListGroup.Item>
               <ListGroup.Item>Litigation and enforcement</ListGroup.Item>
               <ListGroup.Item>Domain name registrations and maintenance</ListGroup.Item>
+              </ListGroup>
             </Card.Body>
           </Accordion.Collapse>
         </Card>
@@ -109,10 +114,12 @@ class Expertise extends Component {
               <div className='subText'>
                 The Corporate team advises on range of competition issues including:
               </div>
+              <ListGroup variant="flush">
               <ListGroup.Item>Cartels and anti-trust investigation</ListGroup.Item>
               <ListGroup.Item>Abuse of dominant position</ListGroup.Item>
               <ListGroup.Item>Commercial agreements</ListGroup.Item>
               <ListGroup.Item>Competition law compliance strategies</ListGroup.Item>
+              </ListGroup>
             </Card.Body>
           </Accordion.Collapse>
         </Card>
@@ -125,12 +132,14 @@ class Expertise extends Component {
               <div className='subText'>
                 The firm has a dedicated team of lawyers and other professionals to provide services to any corporate entity right from the inception to dissolution.
               </div>
+              <ListGroup variant="flush">
               <ListGroup.Item>Mergers and Acquisition</ListGroup.Item>
               <ListGroup.Item>Takeovers</ListGroup.Item>
               <ListGroup.Item>Winding p</ListGroup.Item>
               <ListGroup.Item>CorporateRestructuring</ListGroup.Item>
               <ListGroup.Item>Industry specific liceses</ListGroup.Item>
               <ListGroup.Item>Regulatory Compliances</ListGroup.Item>
+              </ListGroup>
             </Card.Body>
           </Accordion.Collapse>
         </Card>
@@ -143,6 +152,7 @@ class Expertise extends Component {
               <div className='subText'>
                 Our expertise covers legal and commercial advice on matters including:
               </div>
+              <ListGroup variant="flush">
               <ListGroup.Item>Negotiations with creditors for settlements and restructuring</ListGroup.Item>
               <ListGroup.Item>Liquidations/Winding up</ListGroup.Item>
               <ListGroup.Item>Out-of-court restructurings and refinancing</ListGroup.Item>
@@ -153,6 +163,7 @@ class Expertise extends Component {
               <ListGroup.Item>Debt Recovery Tribunal (DRT) including those under the Securitization and Reconstruction of Financial Assets and Enforcement of Security interest Act 2002 (SARFAESI)
               </ListGroup.Item>
               <ListGroup.Item>Financial Due Diligence</ListGroup.Item>
+              </ListGroup>
             </Card.Body>
           </Accordion.Collapse>
         </Card>
@@ -165,13 +176,15 @@ class Expertise extends Component {
               <div className='subText'>
                 The services include
               </div>
+              <ListGroup variant="flush">
               <ListGroup.Item>Mergers and Acquisition</ListGroup.Item>
               <ListGroup.Item>Takeovers</ListGroup.Item>
               <ListGroup.Item>Winding p</ListGroup.Item>
               <ListGroup.Item>CorporateRestructuring</ListGroup.Item>
               <ListGroup.Item>Industry specific liceses</ListGroup.Item>
               <ListGroup.Item>Regulatory Compliances</ListGroup.Item>
-            </Card.Body>
+              </ListGroup>
+              </Card.Body>
           </Accordion.Collapse>
         </Card>
         <Card>
@@ -183,6 +196,7 @@ class Expertise extends Component {
               <div className='subText'>
                 The services include
               </div>
+              <ListGroup variant="flush">
               <ListGroup.Item>Regulatory laws including those relating to licenses and approvals</ListGroup.Item>
               <ListGroup.Item>Structuring of transaction</ListGroup.Item>
               <ListGroup.Item>Stamp Duty</ListGroup.Item>
@@ -191,7 +205,8 @@ class Expertise extends Component {
               <ListGroup.Item>Construction Contracts, Joint Development Agreements Project Management Consultancy Agreement etc.</ListGroup.Item>
               <ListGroup.Item>Grant/Assignment offline licensing of commercial and residential properties</ListGroup.Item>
               <ListGroup.Item>Due diligence and preparation of Title Search Reports</ListGroup.Item>
-            </Card.Body>
+              </ListGroup>
+              </Card.Body>
           </Accordion.Collapse>
         </Card>
       </Accordion>

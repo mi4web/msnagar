@@ -11,13 +11,11 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #e0ebee;
-  border-radius: 20px;
+  background-color: $brandColor;
 }
 
 ::-webkit-scrollbar-track {
   background-color: #fff;
-  border-radius: 20px;
 }
 
 .shine {

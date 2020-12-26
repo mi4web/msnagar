@@ -22,13 +22,17 @@ const data = [
   }
 ]
 class Achievements extends Component {
-
+  
+  componentDidMount() {
+    window.AOS.init();
+  }
+  
   render() {
     return (
       <div className="achievements">
         {data.map((item, index) => {
           return (
-            <div className='item-card' key={index}>
+            <div className='item-card' key={index} data-aos="slide-up" data-aos-duration="1500" data-aos-delay={index * 150}>
               <span className="count">{item.count}</span>
               <span className="name">{item.name}</span>
             </div>

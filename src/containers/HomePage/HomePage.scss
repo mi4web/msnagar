@@ -4,7 +4,7 @@
 
 .homePage {
   .description-wrapper {
-    height: calc(100vh - 66px);
+    min-height: calc(100vh - 66px);
     background: url("../../Img/home.jpg") no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -15,14 +15,13 @@
     margin-left: 50px;
     padding-top: 50px;
     line-height: 1.8;
-    width: 500px;
   }
 
   .sideGutter {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .heading {
+  .sticky {
     position: sticky;
     top: 1px;
     z-index: 1;
@@ -31,13 +30,18 @@
 }
 
 .clients-section {
-  height: 100vh
+  min-height: 500px
 }
 
 
 @include media-breakpoint-down(md) {
   .description {
     padding: 40px 0 !important;
+  }
+}
+@include media-breakpoint-up(md) {
+  .description {
+    width: 500px;
   }
 }
 

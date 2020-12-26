@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './HomePage.scss';
+import Route from "../../routes/routeNames";
+import { getPathByName } from "../../routes/routerManager";
 import Achievements from "../Achievements/Achievements";
 import Clients from "../Clients/Clients";
 import Contact from "../Contact/Contact";
 import Expertise from "../Expertise/Expertise";
 import SectionHeader from "../SectionHeader/SectionHeader";
+import { NavLink } from 'react-router-dom';
 
 class HomePage extends Component {
   render() {
@@ -19,7 +22,10 @@ class HomePage extends Component {
             brings together highly specialized professionals to effectively cater to the legal requirements of
             more than 300 companies and corporate houses (including Multinationals) as its clientele. Our
             moto is to provide a synergetic environment to its client by understanding the clients’ perspective
-            and needs. Read More (to about us page).
+            and needs...&nbsp;
+            <NavLink to={getPathByName(Route.ABOUT)} exact>
+              <span className='text-brand'>read more</span>
+            </NavLink>
           </div>
         </div>
         <div>
@@ -42,10 +48,7 @@ class HomePage extends Component {
           </div>
         </div>
         <div>
-          <div className="heading sideGutter">
-            <SectionHeader text="Contact us"/>
-          </div>
-          <div className='sideGutter'>
+          <div id="contact">
             <Contact />
           </div>
         </div>

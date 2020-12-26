@@ -21,11 +21,6 @@ export const NAV = [
   {
     text: 'Our Team',
     route: Route.TEAM
-  },
-
-  {
-    text: 'Contact',
-    route: 'CONTACT'
   }
 ]
 

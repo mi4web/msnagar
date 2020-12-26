@@ -26,10 +26,6 @@ const LandingPage = Loadable({
 export const routes = [
     {
         path: getPathByName(routeNames.LANDING),
-        component: UnderConstruction,
-        exact: true
-    },{
-        path: getPathByName(routeNames.NEW),
         component: Home,
         exact: true
     },
