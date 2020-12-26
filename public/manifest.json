@@ -1,15 +1,21 @@
 {
-  "short_name": "Paytm Education",
-  "name": "Paytm Education App",
+  "short_name": "M. S. Nagar & Co.",
+  "name": "M. S. Nagar & Co.",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "/logo-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/logo-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
-  "start_url": "./index.html",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "start_url": "/",
+  "background_color": "#47143D",
+  "display": "fullscreen",
+  "scope": "/",
+  "theme_color": "#47143D"
 }
