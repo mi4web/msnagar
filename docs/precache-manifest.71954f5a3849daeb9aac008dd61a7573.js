@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "./static/media/orient-craft.e630073e.jpg"
   },
   {
-    "revision": "83964081d525b069a279",
+    "revision": "51f7fa8f8d4bcb3153a2",
     "url": "./static/css/main.a97a3122.chunk.css"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "./static/media/Linde_plc.2b04e0b2.jpg"
   },
   {
-    "revision": "83964081d525b069a279",
-    "url": "./static/js/main.83964081.chunk.js"
+    "revision": "51f7fa8f8d4bcb3153a2",
+    "url": "./static/js/main.51f7fa8f.chunk.js"
   },
   {
     "revision": "f1fee5971092609b38f5f44b28b0312d",
@@ -60,7 +60,7 @@ self.__precacheManifest = [
     "url": "./static/css/2.0f290eb0.chunk.css"
   },
   {
-    "revision": "5ada975373d77db322473545a62a6d5b",
+    "revision": "65ec22d2b5089ac8255da75766909825",
     "url": "./index.html"
   }
 ];

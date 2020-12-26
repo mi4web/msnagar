@@ -9,10 +9,13 @@ import Disclaimer from "../../components/Disclaimer/Disclaimer";
 class DefaultLayout extends Component {
   constructor() {
     super();
-    this.state = {showDisclaimer: true};
+    this.state = {
+      showDisclaimer: !sessionStorage.getItem('disclaimerAgreed')
+    };
   }
 
   onAgree = () => {
+    sessionStorage.setItem('disclaimerAgreed', 'true')
     this.setState({
       showDisclaimer: false
     });
