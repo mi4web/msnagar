@@ -9,20 +9,19 @@
 }
 
 .item-card {
-  min-width: 180px !important;
+  width: 240px;
   height: 150px;
-  &:not(:last-child) {
-    margin-right: 20px;
-  }
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
   border: none;
   transition: all ease-in 200ms;
+
   &:hover {
-    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
   }
 }
@@ -35,7 +34,15 @@
 }
 
 .count {
-    padding-top: 15px;
-    font-size: 40px;
-    color: $brandColor;
+  padding-top: 15px;
+  font-size: 40px;
+  color: $brandColor;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+  .item-card:not(:last-child) {
+    margin-right: 20px;
+  }
 }

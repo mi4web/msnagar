@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { NavLink, withRouter } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
 import './AppNav.scss';
+import logo from '../../Img/logo.png'
 import { BRAND_NAME } from "../../constants/appConstants";
 import { getPathByName } from "../../routes/routerManager";
 
@@ -12,8 +13,19 @@ class AppNav extends Component {
       <div className="navigation">
         <Navbar bg="light" expand="lg">
           <Navbar.Brand href="#home">
-            <div className='text-brand'>{BRAND_NAME}</div>
-            <div className='text-medium text-secondary'>Advocates and Solicitors</div>
+           <div className="d-flex align-items-center">
+             <img
+               src={logo}
+               width="30"
+               height="30"
+               className="logo d-inline-block align-top"
+               alt="React Bootstrap logo"
+             />
+             <div>
+               <div className='text-brand'>{BRAND_NAME}</div>
+               <div className='text-medium text-secondary'><i>Advocates and Solicitors</i></div>
+             </div>
+           </div>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

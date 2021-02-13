@@ -34,7 +34,7 @@ class Clients extends Component {
      <div className='clients'>
        <Carousel>
          {clients.map((client, index) => (
-           <Carousel.Item interval={500000} key={index}>
+           <Carousel.Item interval={2500} key={index}>
              <img
                className="d-block w-auto img mx-auto"
                src={client.url}

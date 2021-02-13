@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {CardDeck} from 'react-bootstrap'
 import './Team.scss';
+import team from '../../Img/team.jpg'
 import TeamMember from "./TeamMember";
 
 const members = [
@@ -13,10 +14,6 @@ const members = [
     name: 'Mohit Nagar',
     desc: 'Advocate, Managing Partner',
     features: ['LL.M. (Cardiff University, U.K.)', 'Specialization in Company and Commercial Laws- NCLT, NCLAT, CESTAT, High Courts and Supreme Court']
-  },
-  {
-    name: 'Deepanshu Nagar',
-    features: ['B.Tech. (CSE) VIT University', 'LL.M. specializing in Intellectual Property and cyber laws (Queen Mary, London)']
   },
   {
     name: 'Dimple Nagar',
@@ -45,18 +42,16 @@ const members = [
     desc: 'Expert in GST',
     features: ['Excise with over 30 years of experience']
   },
-  {
-    name: 'Damini Kaushik',
-    desc: 'Chartered Accountant'
-  },
 ]
 class Team extends Component {
     render() {
         return (
-            <div className="team">
-              <CardDeck>
-                {members.map((member, index) => <TeamMember index={index} member={member} key={index}/>)}
-              </CardDeck>
+            <div className="team-page">
+              <div className="team">
+                <CardDeck className="row justify-content-center">
+                  {members.map((member, index) => <TeamMember index={index} member={member} key={index}/>)}
+                </CardDeck>
+              </div>
             </div>
         );
     }

@@ -9,7 +9,7 @@ class Contact extends Component {
     render() {
         return (
             <DefaultLayout>
-                <ContactPage />
+                <ContactPage showMap={true} noBg={true}/>
             </DefaultLayout>
         )
     }

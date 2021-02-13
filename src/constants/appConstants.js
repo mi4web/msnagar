@@ -15,12 +15,16 @@ export const NAV = [
     route: 'LANDING'
   },
   {
-    text: 'About Us',
+    text: 'About us',
     route: 'ABOUT'
   },
   {
     text: 'Our Team',
     route: Route.TEAM
+  },
+  {
+    text: 'Contact us',
+    route: Route.CONTACT
   }
 ]
 

@@ -1,11 +1,16 @@
 @import "../../commonstyles/variables.scss";
 
 .contact {
+  background-color: $brandColor;
   flex: 1 0 0;
   margin-top: 40px;
-  background-color: $brandColor;
   color: white;
   padding-top: 30px;
+
+  &.no-bg {
+    background-color: white;
+    color: $prime;
+  }
 
   .mapouter {
     position: relative;
