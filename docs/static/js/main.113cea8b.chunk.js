@@ -18,7 +18,9 @@
           height: "30",
           className: "logo d-inline-block align-top",
           alt: "React Bootstrap logo"
-        }), s.a.createElement("div", null, s.a.createElement("div", { className: "text-brand" }, f.b), s.a.createElement("div", { className: "text-medium text-secondary" }, s.a.createElement("i", null, "Advocates and Solicitors"))))), s.a.createElement(d.a.Toggle, { "aria-controls": "basic-navbar-nav" }), s.a.createElement(d.a.Collapse, { id: "basic-navbar-nav" }, s.a.createElement(A.a, { className: "ml-auto" }, t.map(function(e, t) {
+        }), s.a.createElement("div", null, s.a.createElement("div", { className: "text-brand", style: {
+          fontSize: '28px'
+          } }, f.b), s.a.createElement("div", { className: "text-medium text-secondary" }, s.a.createElement("i", {style: {fontSize: '18px'}}, "Advocates and Solicitors"))))), s.a.createElement(d.a.Toggle, { "aria-controls": "basic-navbar-nav" }), s.a.createElement(d.a.Collapse, { id: "basic-navbar-nav" }, s.a.createElement(A.a, { className: "ml-auto" }, t.map(function(e, t) {
           return s.a.createElement(A.a.Link, { key: t }, s.a.createElement(u.c, { to: Object(g.a)(e.route), activeClassName: "active", key: t, exact: !0 }, s.a.createElement("span", null, e.text)))
         })))))
       }
